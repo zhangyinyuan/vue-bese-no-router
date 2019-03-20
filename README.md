@@ -27,3 +27,11 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### install axios vue-axios cookie
+```
+cnpm install --save axios vue-axios vue-cookies
+
+cnpm install  --save vue-cookies
+
+```
