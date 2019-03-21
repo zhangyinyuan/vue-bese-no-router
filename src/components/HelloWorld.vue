@@ -27,6 +27,7 @@ export default {
 // 
 //     @RequestMapping(path = "/testsAspect")
 //     public Object testsAspect(@RequestHeader HttpHeaders headers) {
+					 // String token = headers.get("token").get(0);
 //         JSONObject jsonObject = new JSONObject();
 //         jsonObject.put("result","0000");
 //         return jsonObject;

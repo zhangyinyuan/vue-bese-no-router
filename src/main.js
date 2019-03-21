@@ -17,9 +17,9 @@ Vue.config.productionTip = false
 // 初始化默认header
 //Axios.defaults.headers.common 写了这个之后,接口要支持跨域
 Axios.defaults.headers.common['Authorization'] = 'test';
-//测试存cookie
-Cookies.set('token','sdjkflsajl123i10231');
-Axios.defaults.headers.common['token'] =  Cookies.get('token');
+//测试存cookie,其他组件 this.cookies.set('token','sdjkflsajl123i10231');
+$cookies.set('token','sdjkflsajl123i10231');
+Axios.defaults.headers.common['token'] =  $cookies.get('token');
 //关于 cookie的文章参考 https://www.jianshu.com/p/535b53989b39
 
 new Vue({
