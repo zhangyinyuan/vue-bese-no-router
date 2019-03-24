@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
 // 全局引用 axios vue-axios vue-cookies
 import Axios from 'axios'
@@ -9,9 +11,7 @@ import Cookies from 'vue-cookies'
 // 全局配置 原型 ,其他的的vue组件中,可以通过 this.axios 或者 this.cookies 来使用
 Vue.prototype.axios = Axios;
 Vue.prototype.cookies = Cookies;
-
-
-
+Vue.use(ElementUI);
 Vue.config.productionTip = false
 
 // 初始化默认header
